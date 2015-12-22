@@ -1,0 +1,173 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden; }
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box; }
+
+.hover-transition {
+  transition: .15s linear; }
+
+body {
+  font-family: Arial,sans-serif; }
+
+.box-content {
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  overflow: hidden;
+  background-size: cover;
+  width: 313px;
+  height: 330px;
+  margin: 0 auto;
+  position: relative; }
+
+.box-slide {
+  position: absolute;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  z-index: 0;
+  top: 0;
+  transition: .3s linear;
+  transition-delay: 0s; }
+  .box-slide-image {
+    max-height: 200px;
+    transition: .3s linear;
+    text-align: center; }
+    .box-slide-image img {
+      transition: .3s linear;
+      transition-delay: .3s; }
+    .box-slide-image.collapsed {
+      max-height: 0; }
+      .box-slide-image.collapsed img {
+        position: relative;
+        z-index: -1;
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        transition-delay: 0s; }
+    .box-slide-image img {
+      margin-left: 1px; }
+  .box-slide-info {
+    padding: 10px 10px 0px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    height: 62px;
+    transition: .3s linear;
+    transition-delay: 0s; }
+    .box-slide-info.expanded {
+      height: 262px;
+      transition-delay: .6s; }
+    .box-slide-info .box-slide-header {
+      color: #f8821d;
+      font-weight: bold;
+      font-size: 18px; }
+  .box-slide-description {
+    font-size: 11px;
+    margin: 7px 0 5px;
+    line-height: 1.2; }
+  .box-slide-note {
+    color: #828282;
+    font-size: 11px;
+    margin: 15px 0 0;
+    line-height: 1.2; }
+  .box-slide.active {
+    transition-delay: 0.3s;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    position: relative;
+    z-index: 1; }
+
+.box-link {
+  margin-left: 10px;
+  font-size: 11px; }
+
+.box-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px; }
+
+.box-link {
+  cursor: pointer;
+  color: #f8821d;
+  text-decoration: underline; }
+  .box-link:hover {
+    color: black; }
+
+.box-btn {
+  float: left;
+  margin-right: 10px;
+  cursor: pointer;
+  width: 68px;
+  height: 26px;
+  font-size: 11px;
+  line-height: 26px;
+  text-align: center; }
+  .box-btn span, .box-btn a {
+    color: #afafaf;
+    text-decoration: none;
+    font-weight: bold; }
+  .box-btn:last-child {
+    margin-right: 0; }
+  .box-btn.prev {
+    padding-left: 22px;
+    background-image: url("../images/button_bg_white_left.png"); }
+    .box-btn.prev:hover {
+      background-image: url("../images/button_bg_orange_left.png"); }
+  .box-btn.next {
+    padding-right: 22px;
+    background-image: url("../images/button_bg_white_right.png"); }
+    .box-btn.next:hover {
+      background-image: url("../images/button_bg_orange_right.png"); }
+  .box-btn.action {
+    float: right;
+    padding-right: 22px;
+    width: 101px;
+    background-image: url("../images/button_bg_white_long.png"); }
+    .box-btn.action span, .box-btn.action a {
+      color: #f8821d;
+      text-decoration: none; }
+    .box-btn.action:hover {
+      background-image: url("../images/button_bg_orange_long.png"); }
+  .box-btn:hover span, .box-btn:hover a {
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
+    color: white; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,13 @@
+.hover-transition {
+  transition: .15s linear;
+}
+
+@mixin transform($string) {
+  transform: $string;
+  -webkit-transform: $string;
+  -ms-transform: $string;
+}
+
+
+
+

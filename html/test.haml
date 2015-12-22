@@ -1,0 +1,24 @@
+!!! 5
+%html
+  %head
+    %title test
+    %meta{:content => "width=device-width", :name => "viewport"}
+    %link{:href => "../css/main.css", :type => "text/css", :rel => "stylesheet"}
+    %script{:src => "../plugins/jquery/jquery-1.11.3.min.js", :type => "text/javascript"}
+    %script{:src => "../js/main.js", :type => "text/javascript"}
+  %body
+    %div.box-content
+      %div.box-slide-container
+      %div.box-link.box_expand
+        show details
+
+      %div.box-controls
+        %div.box-btn.prev.box_slider_control
+          %span
+            Prev
+        %div.box-btn.next.box_slider_control
+          %span
+            Next
+        %div.box-btn.action
+          %a{:href => '#'}
+            Find a store
